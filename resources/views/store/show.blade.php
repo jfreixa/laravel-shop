@@ -13,7 +13,7 @@
             <p>{{$product->extract}}</p>
             <p>Preu: {{number_format($product->price, 2)}}</p>
             <p>
-                <a href="{{route('card-add', $product->slug)}}">Comprar</a>
+                <a href="{{route('cart-add', $product->slug)}}">Comprar</a>
             </p>
         </div>
     </div>

@@ -12,7 +12,7 @@
                             <p>{{$product->extract}}</p>
                             <h3 class="text-right">Preu: {{number_format($product->price, 2)}} €</h3>
                             <p class="text-right">
-                                <a class="btn btn-primary" href="{{route('card-add', $product->slug)}}">
+                                <a class="btn btn-primary" href="{{route('cart-add', $product->slug)}}">
                                     Comprar
                                 </a>
                                 <a class="btn btn-default" href="{{route('product-detail', $product->slug)}}">Detall</a>
