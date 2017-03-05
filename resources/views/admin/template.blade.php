@@ -10,11 +10,11 @@
 </head>
 <body>
 @if (\Session::has('message'))
-    @include('store.partials.message')
+    @include('admin.partials.message')
 @endif
-@include ('store.partials.nav')
+@include ('admin.partials.nav')
 @yield('content')
-@include('store.partials.footer')
+@include('admin.partials.footer')
 <script src="{{asset("js/app.js")}}"></script>
 @yield('javascript')
 </body>

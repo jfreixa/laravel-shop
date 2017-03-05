@@ -7,14 +7,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Botiga web</a>
+            <a class="navbar-brand" href="{{route('admin-home')}}">Botiga web</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <p class="navbar-text"> <i class='fa fa-dashboard'></i>Backend Botiga Laravel</p>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Categories</a></li>
+                <li><a href="{{route('category.index')}}">Categories</a></li>
                 <li><a href="#">Productes</a></li>
                 <li><a href="#">Comandes</a></li>
                 <li class="dropdown">
