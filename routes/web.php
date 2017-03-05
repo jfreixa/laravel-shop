@@ -31,3 +31,5 @@ Route::middleware('auth')->name('order-detail')->get('/order-detail', 'CartContr
 
 Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');
+Route::name('payment')->get('/payment', 'PaypalController@postPayment');
+Route::name('payment.status')->get('/payment/status', 'PaypalController@getPaymentStatus');

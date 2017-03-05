@@ -43,7 +43,7 @@
                             <i class="fa fa-chevron-circle-left"></i> Tornar
                         </a>
 
-                        <a href="#" class="btn btn-warning">
+                        <a href="{{route('payment')}}" class="btn btn-warning">
                             Pagar amb <i class="fa fa-cc-paypal"></i>
                         </a>
                     </p>
