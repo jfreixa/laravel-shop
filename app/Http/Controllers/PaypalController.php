@@ -29,7 +29,7 @@ class PaypalController extends BaseController
 
     public function __construct()
     {
-        $paypal_conf = \Config::get('paypal');
+        $paypal_conf = \Config::get('Paypal');
         $this->_api_context = new ApiContext(new OAuthTokenCredential($paypal_conf['client_id'], $paypal_conf['secret']));
         $this->_api_context->setConfig($paypal_conf['settings']);
     }

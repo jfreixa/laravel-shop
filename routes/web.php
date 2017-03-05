@@ -33,3 +33,7 @@ Auth::routes();
 Route::get('/logout', 'Auth\LoginController@logout');
 Route::name('payment')->get('/payment', 'PaypalController@postPayment');
 Route::name('payment.status')->get('/payment/status', 'PaypalController@getPaymentStatus');
+
+Route::prefix('admin')->namespace('Admin')->group(function () {
+    Route::resource('/category', 'CategoryController');
+});
