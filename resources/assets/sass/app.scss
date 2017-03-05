@@ -1,0 +1,41 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import "pages/landing";
+/* footer ---------*/
+footer{
+  background: #222;
+  text-align: center;
+}
+footer p {
+  text-align: justify;
+}
+ul.xarxes li {
+  display: inline-block;
+}
+ul.xarxes li a {
+  color: orange;
+}
+.avatar{
+  border: 5px solid orange;
+  border-radius: 50%;
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+.table-cart {
+  border-radius: 1em;
+  margin-bottom: 30px;
+  padding:1em;
+  img {
+    width:50px;
+  }
+}
