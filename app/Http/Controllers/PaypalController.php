@@ -118,7 +118,7 @@ class PaypalController extends BaseController
 
             if ($result->getState() == 'approved') {
                 $this->saveOrder();
-                return \Redirect::route('cart-show')->with('message', 'tu compra ha sido realizada de forma correcta');
+                return \Redirect::route('home')->with('message', 'tu compra ha sido realizada de forma correcta');
             } else {
                 return \Redirect::route('cart-show')->with('message', 'tu compra fue cancelada! :( Esperamos verte pronto...');
             }
